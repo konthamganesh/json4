@@ -1,10 +1,10 @@
 node() {
     stage("checkout") {
-        def jsonString = '{"name":"katone","age":5}'
+        def jsonString = '{"name":"ganesh","age":23}'
         def jsonObj = readJSON text: jsonString
 
-        assert jsonObj['name'] == 'katone'  // this is a comparison.  It returns true
-        sh "echo ${jsonObj.name}"  // prints out katone
-        sh "echo ${jsonObj.age}"   // prints out 5
+        assert jsonObj['name'] == 'ganesh' 
+        sh "echo ${jsonObj.name}"  
+        sh "echo ${jsonObj.age}" 
     }
 }
