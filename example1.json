@@ -1,10 +1,7 @@
-node() {
-    stage("checkout") {
-        def jsonString = '{"name":"ganesh","age":23}'
-        def jsonObj = readJSON text: jsonString
-
-        assert jsonObj['name'] == 'ganesh' 
-        sh "echo ${jsonObj.name}"  
-        sh "echo ${jsonObj.age}" 
-    }
+{
+   "model number": "RX234",
+ "customers": ["Adam", "Paul"],
+ "price": 45000,
+ “quantity”: 12,
+ “company”: “Samsung”
 }
